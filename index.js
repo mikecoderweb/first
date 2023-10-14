@@ -134,8 +134,8 @@
 
 //     console.log(reverse_letters("Fozil"));
 
-const str = "Fozil"
-function reverseAString(str) {
-   return str.split("").reverse("").join("");
-}
-console.log(`Reversed string is: ${reverseAString(str)}`)
+// const str = "Fozil"
+// function reverseAString(str) {
+//    return str.split("").reverse("").join("");
+// }
+// console.log(`Reversed string is: ${reverseAString(str)}`)
