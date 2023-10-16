@@ -139,6 +139,23 @@
 //    return str.split("").reverse("").join("");
 // }
 // console.log(`Reversed string is: ${reverseAString(str)}`)
-console.log('hey bro');
-console.log('git hubc');
+// console.log('hey bro');
+// console.log('git hubc');
+
+function removeLeadingTrailing(n) {
+    n = n.replace(/^0+(?=\d\.)/, '');
+    n = n.replace(/^0+/, '');
+    const parts = n.split('.');
+    if (parts.length === 2) {
+        parts[1] = parts[1].replace(/0+$/, '');
+        if (parts[1] === '') {
+            return parts[0];
+          }
+      
+          return parts.join('.');
+        }
+      
+        return n;
+      }
+      console.log(removeLeadingTrailing("230.000"));
 
